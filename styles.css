@@ -36,6 +36,9 @@ body {
   font-family: "Chivo", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #header {
@@ -95,14 +98,14 @@ body {
   gap: 1rem;
 }
 
-.right .heading {
+.heading {
   font-size: 3rem;
 
   font-family: "Space Grotesk";
   text-transform: uppercase;
 }
 
-.right .subheading {
+.subheading {
   font-size: 1.5rem;
 }
 
@@ -110,14 +113,14 @@ body {
   width: 100%;
 }
 
-#form input {
+#form #email {
   padding: 0.5rem;
   width: 75%;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
 }
 
-#form button {
+#form .button {
   padding: 0.5rem;
   width: 60%;
   background-color: var(--alt);
@@ -141,4 +144,46 @@ body {
   background: radial-gradient(50.05% 50% at 50% 50%, #836fff, #070f2b10);
   filter: blur(5000px);
   opacity: 0.5;
+}
+
+/* FEATURES */
+
+#features {
+  padding: 4rem;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  width: 80%;
+  height: 500px;
+}
+
+.highlights li {
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.highlights li:hover {
+  font-size: 1.3rem;
+  color: var(--alt);
+  transition: 500ms;
+  cursor: none;
+}
+
+.highlights li::before {
+  content: "# ";
+}
+
+.line-break {
+  width: 80%;
+  height: 0.25rem;
+  background-color: var(--alt);
+  border: none;
 }
